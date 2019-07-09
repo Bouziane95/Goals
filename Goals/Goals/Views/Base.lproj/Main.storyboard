@@ -149,10 +149,30 @@
                                                         <constraint firstItem="X4K-Pf-5PS" firstAttribute="leading" secondItem="QZ5-2T-liC" secondAttribute="leading" id="v5M-I4-xJH"/>
                                                     </constraints>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xzu-Lr-W4U">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL COMPLETE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aE-rS-XS4">
+                                                            <rect key="frame" x="87" y="19" width="201" height="31.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="23"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91764705882352937" green="0.66274509803921566" blue="0.26666666666666666" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="4aE-rS-XS4" firstAttribute="centerY" secondItem="Xzu-Lr-W4U" secondAttribute="centerY" id="F6V-4X-rZG"/>
+                                                        <constraint firstItem="4aE-rS-XS4" firstAttribute="centerX" secondItem="Xzu-Lr-W4U" secondAttribute="centerX" id="fLA-tZ-rDx"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Xzu-Lr-W4U" secondAttribute="bottom" id="7wM-v7-3xJ"/>
                                                 <constraint firstItem="g2W-Xd-HWq" firstAttribute="top" secondItem="EcM-Aq-s3c" secondAttribute="top" constant="8" id="AaJ-SM-Xmb"/>
+                                                <constraint firstItem="g2W-Xd-HWq" firstAttribute="leading" secondItem="Xzu-Lr-W4U" secondAttribute="trailing" constant="-48" id="HKe-hu-Vru"/>
+                                                <constraint firstItem="Xzu-Lr-W4U" firstAttribute="leading" secondItem="EcM-Aq-s3c" secondAttribute="leading" id="ID7-ny-SR1"/>
                                                 <constraint firstAttribute="trailing" secondItem="g2W-Xd-HWq" secondAttribute="trailing" constant="8" id="MEj-WQ-Ru8"/>
+                                                <constraint firstItem="Xzu-Lr-W4U" firstAttribute="top" secondItem="EcM-Aq-s3c" secondAttribute="top" id="ajy-3u-8Iz"/>
                                                 <constraint firstAttribute="bottom" secondItem="QZ5-2T-liC" secondAttribute="bottom" constant="9.5" id="buB-zs-7cU"/>
                                                 <constraint firstAttribute="bottom" secondItem="g2W-Xd-HWq" secondAttribute="bottom" constant="8" id="cdv-dg-7cQ"/>
                                                 <constraint firstItem="QZ5-2T-liC" firstAttribute="leading" secondItem="EcM-Aq-s3c" secondAttribute="leading" constant="10" id="sRK-iB-pcE"/>
@@ -160,6 +180,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="Xzu-Lr-W4U" id="6Lw-9N-5WE"/>
                                             <outlet property="goalDescriptionLbl" destination="GvY-9V-SBS" id="oe7-Zv-FdI"/>
                                             <outlet property="goalProgress" destination="g2W-Xd-HWq" id="xYf-KF-uVN"/>
                                             <outlet property="goalTypeLbl" destination="ORP-hQ-hYk" id="f0V-uL-v2a"/>
